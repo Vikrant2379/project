@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>John Doe - Resume</title>
+
+  <style>
+    /* Reset and Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      color: #2c3e50;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .contact p {
+      font-size: 0.95em;
+      margin: 4px 0;
+      color: #666;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #3498db;
+      font-size: 1.5em;
+    }
+
+    /* Lists */
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills li {
+      background-color: #ecf0f1;
+      padding: 8px 10px;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    /* Jobs */
+    .job, .edu {
+      margin-bottom: 20px;
+    }
+
+    .job h3, .edu h3 {
+      font-size: 1.2em;
+      color: #2c3e50;
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .skills {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+      <h1>John Doe</h1>
+      <p>Frontend Developer</p>
+      <div class="contact">
+        <p>Email: johndoe@example.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Location: San Francisco, CA</p>
+        <p>Website: www.johndoe.dev</p>
+      </div>
+    </header>
+
+    <!-- Summary -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Detail-oriented Frontend Developer with 4+ years of experience designing, developing, and managing complex websites and web applications. Proficient in HTML, CSS, JavaScript, and modern frameworks like React. Committed to creating user-friendly, responsive designs and improving user experience.</p>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML5 / CSS3</li>
+        <li>JavaScript / ES6+</li>
+        <li>React.js</li>
+        <li>Git / GitHub</li>
+        <li>Responsive Design</li>
+        <li>Figma / Adobe XD</li>
+        <li>REST APIs</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Work Experience</h2>
+
+      <div class="job">
+        <h3>Senior Frontend Developer - TechCorp</h3>
+        <p class="date">2022 - Present</p>
+        <ul>
+          <li>Lead frontend development for a large-scale eCommerce platform using React.</li>
+          <li>Collaborated with UX/UI designers to improve performance and accessibility.</li>
+          <li>Mentored junior developers and conducted code reviews.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Frontend Developer - WebSolutions Inc.</h3>
+        <p class="date">2019 - 2022</p>
+        <ul>
+          <li>Built responsive landing pages and websites using HTML, CSS, and JavaScript.</li>
+          <li>Worked with backend developers to integrate APIs.</li>
+          <li>Optimized websites for speed and SEO.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p>University of California, Berkeley</p>
+        <p class="date">2015 - 2019</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website:</strong> Built a personal website using React and hosted on Netlify.</li>
+        <li><strong>Weather App:</strong> Created a weather dashboard using OpenWeatherMap API and vanilla JS.</li>
+        <li><strong>To-Do App:</strong> A fully responsive task manager with localStorage support.</li>
+      </ul>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Frontend Developer Certification - freeCodeCamp (2021)</li>
+        <li>Responsive Web Design Certification - Coursera (2020)</li>
+      </ul>
+    </section>
+
+    <!-- Languages -->
+    <section>
+      <h2>Languages</h2>
+      <ul>
+        <li>English (Fluent)</li>
+        <li>Spanish (Intermediate)</li>
+      </ul>
+    </section>
+
+    <!-- Interests -->
+    <section>
+      <h2>Interests</h2>
+      <p>Open Source, UI/UX Design, Blogging, Traveling, Photography</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 John Doe • Designed with ❤️</p>
+    </footer>
+
+  </div>
+</body>
+</html>
